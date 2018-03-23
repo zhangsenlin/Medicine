@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:gravity="center"
+	    android:background="#0EACED">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="过度医疗检查"
+	        android:textSize="18sp"/>
+	</RelativeLayout>
+    
+	
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="疾\u3000病："
+	        android:textSize="18sp"/>
+	    <EditText
+	        android:id="@+id/input_jibing" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="检查项："
+	        android:textSize="18sp"/>
+	    <EditText
+	        android:id="@+id/input_jianchaxiang1" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="检查项："
+	        android:textSize="18sp"/>
+	    <EditText
+	        android:id="@+id/input_jianchaxiang2" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="检查项："
+	        android:textSize="18sp"/>
+	    <EditText
+	        android:id="@+id/input_jianchaxiang3" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="检查项："
+	        android:textSize="18sp"/>
+	    <EditText
+	        android:id="@+id/input_jianchaxiang4" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_height="40dp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:gravity="center_vertical">
+	    <TextView 
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="检查项："
+	        android:textSize="18sp"/>
+	    <EditText
+	        android:id="@+id/input_jianchaxiang5" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"/>
+	</LinearLayout>
+	<TextView 
+	    android:id="@+id/Check_result"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:textSize="18sp"
+	    android:textColor="#ff0000"
+	    android:gravity="center_horizontal"/>
+	<Button 
+	    android:id="@+id/begin_Check"
+	    android:onClick="onClick"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:background="@drawable/shape"
+        android:text="检查"/>
+</LinearLayout>

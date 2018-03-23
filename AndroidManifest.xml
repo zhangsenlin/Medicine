@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicine"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.medicine.login.Login"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.medicine.ZhengChangSheng"
+            android:launchMode="singleInstance"></activity>
+        
+        <activity android:name="com.example.medicine.person_center.SoftWareInstroduce"
+            android:launchMode="singleInstance"></activity>
+        
+        <activity android:name="com.example.medicine.MainActivity"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name="com.example.medicine.WaiKe"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name="com.example.medicine.YiYao"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name="com.example.medicine.DieDa"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name="com.example.medicine.ZhongYi"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name="com.example.medicine.ChangWeiYan"
+            android:launchMode="singleInstance">
+        </activity>
+        <!-- <activity android:name="com.example.medicine.login.Login"
+            android:launchMode="singleInstance"></activity> -->
+        <activity android:name="com.example.medicine.login.NewAccount"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name=".Chat"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name=".Health_Medicial"
+            android:launchMode="singleInstance"></activity>
+        
+        
+        <activity android:name="com.example.medicine.GanMaoLing"
+            android:launchMode="singleInstance"></activity>
+        
+        
+        <activity android:name=".Health_Check"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.person_center.Person_Setting"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.person_center.Person_Medicine"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.person_center.Person_Medicial"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.person_center.Person_Check"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.person_center.Answers"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.person_center.Area"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.changepassword.ChangePassword"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.HospitalAMap.HospitalMap"
+            android:launchMode="singleInstance"></activity>
+        
+        <!-- check 查药-->
+        <activity android:name="com.example.medicine.checkmedicine.MedicineClass"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.checkmedicine.MedicineCommon"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name="com.example.medicine.checkmedicine.MedicinePart"
+            android:launchMode="singleInstance"></activity>
+        
+        
+        <activity android:name="com.example.medicine.checkmedicine.Check_MuchResult"
+            android:launchMode="singleInstance"></activity>
+        
+        <!--疾病介绍  -->
+        <activity android:name="com.example.medicine.checkmedicine.WeaknessCheck"
+            android:launchMode="singleInstance"></activity>
+        <meta-data android:name="com.amap.api.v2.apikey" 
+            android:value="fc3d17a19a7bcc41a987a23a87a59cb9">
+		<!-- //开发者申请的key  --> 
+</meta-data>
+    </application>
+
+</manifest>

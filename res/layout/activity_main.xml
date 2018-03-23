@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.medicine.MainActivity" >
+
+    <android.support.v4.view.ViewPager 
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+    //主界面内容
+    <LinearLayout
+        android:id="@+id/MainContent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+  		//底部 询医 标签
+        <LinearLayout
+            android:id="@+id/doctor_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/image_xunyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/doctor"
+                android:layout_gravity="center"></ImageView>
+   
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_xunyi"
+                android:text="询医"
+                android:textSize="15sp"
+                android:layout_gravity="center"></TextView></LinearLayout>
+        //底部 问药 标签
+        <LinearLayout
+            android:id="@+id/medicine_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/image_chayao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medicine"
+                android:layout_gravity="center"></ImageView>
+   
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_chayao"
+                android:text="查药"
+                android:textSize="15sp"
+                android:layout_gravity="center"></TextView></LinearLayout>
+        //底部 我 标签
+        <LinearLayout
+            android:id="@+id/me_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="bottom">
+            <ImageView
+                android:id="@+id/image_wo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/me_32"
+                android:layout_gravity="center"></ImageView>
+   
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_wo"
+                android:text="我"
+                android:textSize="15sp"
+                android:layout_gravity="center"></TextView></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical" 
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginRight="10dp"
+		    >
+		    
+		    <RelativeLayout
+		        android:id="@+id/topcontent" 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        <ImageView 
+		            android:onClick="onClick"
+		            android:id="@+id/diedaback"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:src="@drawable/back_48_blue"/>
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="外科健康"
+		            android:layout_marginLeft="45dp"
+		            android:textSize="15sp"
+		            android:textColor="#000000"
+		            android:layout_centerVertical="true"/>
+		        <ImageView 
+		            android:onClick="onClick"
+		            android:id="@+id/diedashuaxin"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:src="@drawable/shuaxin_32"
+		            android:layout_alignParentRight="true"/>
+		    </RelativeLayout>
+		    
+		    
+		    <RelativeLayout 
+		        
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		        <TextView
+			    android:id="@+id/waikeTitle"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textSize="20dp"
+			    android:layout_marginTop="20dp"
+			    />
+			<TextView 
+			    android:id="@+id/time"
+			    android:layout_below="@id/waikeTitle"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:textSize="10sp"/>
+		
+			<ImageView 
+			    android:id="@+id/waikeImage"
+			    android:layout_width="match_parent"
+			    android:layout_height="180dp"
+			    android:scaleType="fitXY"
+			    android:layout_below="@id/time"
+			    android:layout_marginTop="15dp"
+			    android:layout_centerHorizontal="true"
+			    />
+			<TextView 
+			    android:id="@+id/waikeContent"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lineSpacingExtra="15dp"
+			    android:layout_marginTop="25dp"
+			    android:layout_below="@id/waikeImage"
+			    style="@style/dieda_detailtext"/>
+			<TextView 
+			    android:layout_below="@id/waikeContent"
+			    android:layout_width="match_parent"
+			    android:layout_height="30dp"/>
+		    </RelativeLayout>
+			
+		</LinearLayout>
+</ScrollView>

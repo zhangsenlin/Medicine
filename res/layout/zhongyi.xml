@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    >
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" 
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginRight="10dp"
+		    >
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        <ImageView 
+		            android:onClick="onClick"
+		            android:id="@+id/zhongyiback"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:src="@drawable/back_48_blue"/>
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="外科健康"
+		            android:layout_marginLeft="45dp"
+		            android:textSize="15sp"
+		            android:layout_centerVertical="true"
+		            />
+		        
+		        <ImageView 
+		            android:onClick="onClick"
+		            android:id="@+id/zhongyishuaxin"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_alignParentRight="true"
+		            android:src="@drawable/shuaxin_32"/>
+		    </RelativeLayout>
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="跌打损伤你知道多少？"
+			    android:textSize="20dp"
+			    android:layout_marginTop="20dp"
+			    />
+			<TextView 
+			    android:id="@+id/zhongyi_time"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:textSize="10sp"/>
+		
+			<ImageView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="160dp"
+			    android:src="@drawable/zhongyi_detailimage"
+			    android:scaleType="fitXY"
+			    android:layout_marginTop="15dp"/>
+			<TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:lineSpacingExtra="15dp"
+			    android:layout_marginTop="20dp"
+			    style="@style/dieda_detailtext"
+			    android:text="@string/zhongyi_detailtext"/>
+			<TextView 
+			    android:layout_width="match_parent"
+			    android:layout_height="30dp"/>
+		</LinearLayout>
+</ScrollView>

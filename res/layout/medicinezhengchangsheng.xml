@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView    
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="fill_parent"    
+    android:layout_height="fill_parent" 
+    android:scrollbars="none"   
+    android:fadingEdge="vertical"> 
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+		<RelativeLayout
+		    android:id="@+id/medicine_zhangchangsheng_top"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:padding="10dp" 
+		    android:background="#0266BC">
+		    
+		    <ImageView
+		        android:onClick="onClick"
+		        android:id="@+id/zhengchangsheng_cha" 
+		        android:layout_width="25dp"
+		        android:layout_height="25dp"
+		        android:src="@drawable/cha_32"
+		        android:scaleType="fitXY"
+		        />
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="整肠生说明"
+			        android:textSize="18sp"
+			        android:layout_centerInParent="true" 
+			        />
+		    <ImageView 
+		        android:id="@+id/zhengchangsheng_shuaxin"
+		        android:layout_width="25dp"
+		        android:layout_height="25dp"
+		        android:src="@drawable/shuaxin_32"
+		        android:layout_gravity="center_vertical"
+		        android:layout_alignParentRight="true"/>
+		</RelativeLayout>
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="150dp"
+	        android:layout_marginTop="20dp">
+	        <ImageView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/tainuolin"/>
+	    </LinearLayout>
+	    
+	    
+	    <RelativeLayout
+	        android:id="@+id/center_shuoming" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:background="#CDCDCD">
+	        <TextView 
+		        android:layout_marginLeft="10dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:text="药品说明："
+	            />
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/medicine_right"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="10dp"
+	            />
+	    </RelativeLayout>
+	    
+	    
+	    <TableLayout 
+	        android:layout_marginTop="10dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="@drawable/shape_divider"
+   		    android:showDividers="middle">
+	        
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_name"
+	                style="@style/zhengchangsheng_title"
+	                android:layout_marginLeft="10dp"/>
+	        </TableRow>
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_name_text"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+	        
+	        <TableRow>
+	            <TextView 
+	                android:layout_marginLeft="10dp"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_xingzhuang"
+	                style="@style/zhengchangsheng_title"/>
+	        </TableRow>
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_xingzhuang_text"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+	        
+	        
+	        <TableRow>
+	            <TextView
+	                android:layout_marginLeft="10dp" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_shiyingzheng"
+	                style="@style/zhengchangsheng_title"/>
+	        </TableRow>
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_shiyingzheng_text"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+	        
+	        
+	        <TableRow>
+	            <TextView
+	                android:layout_marginLeft="10dp" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_yongfayongliang"
+	                style="@style/zhengchangsheng_title"/>
+	        </TableRow>
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_yongfayongliang_text"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+	        
+	        
+	        <TableRow>
+	            <TextView
+	                android:layout_marginLeft="10dp" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_zhuyishixiang"
+	                style="@style/zhengchangsheng_title"/>
+	        </TableRow>
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_zhuyishixiang_text"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+	        
+	        
+	        <TableRow>
+	            <TextView
+	                android:layout_marginLeft="10dp" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_yaolizuoyong"
+	                style="@style/zhengchangsheng_title"/>
+	        </TableRow>
+	        <TableRow>
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="@string/medicine_yaolizuoyong_text"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+			<TableRow>
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="10dp"
+	                style="@style/zhengchangsheng_text"/>
+	        </TableRow>
+	        
+	    </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

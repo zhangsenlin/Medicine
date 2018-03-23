@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#369865">
+        <TextView 
+            android:text="账户管理"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff">
+		
+        <LinearLayout 
+            android:id="@+id/person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/person_shape"
+            android:showDividers="middle"
+            android:divider="@drawable/shape_divider">
+            <RelativeLayout 
+                android:id="@+id/zhanghu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+	            <TextView 
+	                android:id="@+id/text_zhanghu"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="账户名："
+	                android:textColor="#698543"
+	                android:textSize="20sp"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="10dp"/>
+	            <TextView 
+	                android:id="@+id/personsetting_name"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="20sp"
+	                android:textColor="#698543"
+	                android:layout_centerVertical="true"
+	                android:layout_toRightOf="@id/text_zhanghu"
+	                android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+	        <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+	            <TextView
+	                android:id="@+id/text_sex" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="性别："
+	                android:textColor="#698543"
+	                android:textSize="20sp"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="10dp"/>
+	            <TextView
+	                android:id="@+id/personsetting_sex" 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textSize="20sp"
+	                android:textColor="#698543"
+	                android:text="男"
+	                android:layout_centerVertical="true"
+	                android:layout_toRightOf="@id/text_sex"
+	                android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+        
+        
+        
+        <RelativeLayout
+            android:onClick="onClick"
+            android:id="@+id/update_paddword" 
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/person_shape">
+            <TextView 
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改密码"
+                android:textColor="#698543"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/person_shape"
+            android:showDividers="middle"
+            android:divider="@drawable/shape_divider">
+            <RelativeLayout
+                android:id="@+id/software_introduce"
+                android:onClick="onClick" 
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+	            <TextView 
+	                android:id="@+id/text_soft"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="软件说明"
+	                android:textColor="#698543"
+	                android:textSize="20sp"
+	                android:layout_centerInParent="true"/>
+            </RelativeLayout>
+	        <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="关于我们"
+	                android:textColor="#698543"
+	                android:textSize="20sp"
+	                android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        
+        <RelativeLayout
+            android:id="@+id/exit_zhanghu" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <Button 
+                android:id="@+id/exit"
+                android:onClick="onClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="退出账户"
+                android:textColor="#d81e06"
+                android:textSize="20sp"
+                android:background="@drawable/shape"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
